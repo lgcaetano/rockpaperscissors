@@ -46,8 +46,8 @@ export default function Game(props){
 }
 
     useEffect(() => {
-        let recordedScore = parseInt(localStorage.getItem("rpsScore"))
-        setScore(recordedScore ?? 0)
+        let recordedScore = parseInt(localStorage.getItem("rpsScore") ?? 0)
+        setScore(isNaN(recordedScore) ? 0 : recordedScore)
     }, [])
 
 
