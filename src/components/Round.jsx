@@ -23,6 +23,9 @@ export default function Round (props){
                 <div className="font-semibold text-xl">YOUR CHOICE</div>
                 <Option clickFunction={() => {}} size="large" value={props.playerOption} position="relative"
                 winner={props.result === "win"}></Option>
+                <h1 className="text-2xl font-bold">
+                    {props.playerOption.toUpperCase()}
+                </h1>
             </div>
 
             <div className={`transition-all w-52 font-extrabold h-52 flex flex-col justify-around items-center
@@ -39,6 +42,9 @@ export default function Round (props){
                  <Option clickFunction={() => {}} size="large" value={props.computerOption} position="relative"
                  winner={props.result === "loss"}></Option> : 
                  optionPlaceholder}
+                 <h1 className="text-2xl font-bold">
+                     {props.computerOption.toUpperCase()}
+                 </h1>
             </div>
 
         </div>
