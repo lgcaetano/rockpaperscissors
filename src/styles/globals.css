@@ -103,3 +103,7 @@ div.border-t-white{
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+
+.modal{
+  background-color: rgba(0, 0, 0, 0.384);
+}
